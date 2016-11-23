@@ -1,0 +1,14 @@
+<map id="easyMesh::handleNodeSync" name="easyMesh::handleNodeSync">
+<area shape="rect" id="node2" href="$classeasy_mesh.html#ad0acddc98f89b0b8dba7c38e60f9ea70" title="easyMesh::debugMsg" alt="" coords="1211,284,1362,310"/>
+<area shape="rect" id="node3" href="$classeasy_mesh.html#a8ec70e5cf7328a1331d7cb739d9ec36d" title="easyMesh::findConnection" alt="" coords="497,56,674,82"/>
+<area shape="rect" id="node4" href="$classeasy_mesh.html#a7afcf120bcd05a1b329757a4fb5d6f3b" title="easyMesh::closeConnection" alt="" coords="968,106,1155,133"/>
+<area shape="rect" id="node5" href="$classeasy_mesh.html#adc34836b6bfb1b6a6748607e2d85e0d1" title="easyMesh::subConnectionJson" alt="" coords="243,157,448,184"/>
+<area shape="rect" id="node6" href="$classeasy_mesh.html#a2932fef62e8ed3dd7167b33cdee54df1" title="easyMesh::sendMessage" alt="" coords="500,233,671,260"/>
+<area shape="rect" id="node8" href="$classeasy_mesh.html#a48fafa71748d15fd0b804299d05d9bbb" title="easyMesh::startTimeSync" alt="" coords="258,309,433,336"/>
+<area shape="rect" id="node7" href="$classeasy_mesh.html#a397119595eda5269565b2169bed8f085" title="easyMesh::sendPackage" alt="" coords="733,258,902,285"/>
+<area shape="rect" id="node9" href="$classeasy_mesh.html#a9f4349c6be8530e4d852b68183a9ff19" title="easyMesh::adoptionCalc" alt="" coords="502,385,669,412"/>
+<area shape="rect" id="node12" href="$classtime_sync.html#a11251c02d78b7fc62c457b4e36ab15e3" title="timeSync::buildTimeStamp" alt="" coords="728,512,907,538"/>
+<area shape="rect" id="node10" href="$classeasy_mesh.html#ad86a28d45d33678d20d3afe4db634af2" title="easyMesh::connectionCount" alt="" coords="723,410,911,437"/>
+<area shape="rect" id="node11" href="$classeasy_mesh.html#af71b90d4f94b0007128c82a268ef7b49" title="easyMesh::jsonSubConnCount" alt="" coords="960,461,1163,488"/>
+<area shape="rect" id="node13" href="$classeasy_mesh.html#a4c09493309363193bdd9f87ac715f8ad" title="easyMesh::getNodeTime" alt="" coords="977,562,1145,589"/>
+</map>

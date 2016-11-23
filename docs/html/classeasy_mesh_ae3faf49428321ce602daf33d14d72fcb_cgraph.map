@@ -1,0 +1,9 @@
+<map id="easyMesh::handleTimeSync" name="easyMesh::handleTimeSync">
+<area shape="rect" id="node2" href="$classeasy_mesh.html#ad0acddc98f89b0b8dba7c38e60f9ea70" title="easyMesh::debugMsg" alt="" coords="934,103,1085,130"/>
+<area shape="rect" id="node3" href="$classtime_sync.html#aa4f15ef82fbcf0e28c9cbb78cbb92114" title="timeSync::processTimeStamp" alt="" coords="241,52,439,79"/>
+<area shape="rect" id="node5" href="$classeasy_mesh.html#a4c09493309363193bdd9f87ac715f8ad" title="easyMesh::getNodeTime" alt="" coords="716,103,884,130"/>
+<area shape="rect" id="node6" href="$classeasy_mesh.html#a2932fef62e8ed3dd7167b33cdee54df1" title="easyMesh::sendMessage" alt="" coords="492,154,663,180"/>
+<area shape="rect" id="node8" href="$classtime_sync.html#a014ba647d52f3961c7d40cee5d4a54da" title="timeSync::calcAdjustment" alt="" coords="253,230,427,256"/>
+<area shape="rect" id="node4" href="$classtime_sync.html#a11251c02d78b7fc62c457b4e36ab15e3" title="timeSync::buildTimeStamp" alt="" coords="488,52,667,79"/>
+<area shape="rect" id="node7" href="$classeasy_mesh.html#a397119595eda5269565b2169bed8f085" title="easyMesh::sendPackage" alt="" coords="715,204,885,231"/>
+</map>
