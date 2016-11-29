@@ -90,44 +90,45 @@ class easyMesh {
 public:
     //inline functions
     uint32_t            getNodeId( void ) { return _nodeId;};
-   
+
     // in easyMeshDebug.cpp
     void                setDebugMsgTypes( uint16_t types );
     void                debugMsg( debugType type, const char* format ... );
-    
+
     // in easyMesh.cpp
 //    void                init( void );
     void                init( String ssid, String password, uint16_t port, _auth_mode authmode = AUTH_WPA2_PSK, uint8_t channel = 0, phy_mode_t phymode = PHY_MODE_11G, uint8_t maxtpw = 82, uint8_t hidden = 0, uint8_t maxconn = 4 );
     void                update( void );
     bool                sendSingle( uint32_t &destId, String &msg );
     bool                sendBroadcast( String &msg );
-    
+
     // in easyMeshConnection.cpp
     void                setReceiveCallback( void(*onReceive)(uint32_t from, String &msg) );
     void                setNewConnectionCallback( void(*onNewConnection)(bool adopt) );
+    void                setLostConnectionCallback( void(*onLostConnection)( uint32_t nodeId ) );
     uint16_t            connectionCount( meshConnectionType *exclude = NULL );
 
     // in easyMeshSync.cpp
     uint32_t            getNodeTime( void );
-    
+
     // should be prototected, but public for debugging
     scanStatusType                  _scanStatus = IDLE;
     nodeStatusType                  _nodeStatus = INITIALIZING;
     SimpleList<bss_info>            _meshAPs;
     SimpleList<meshConnectionType>  _connections;
-    
+
 protected:
-    
+
     // in easyMeshComm.cpp
     //must be accessable from callback
     bool                sendMessage( meshConnectionType *conn, uint32_t destId, meshPackageType type, String &msg );
     bool                sendMessage( uint32_t destId, meshPackageType type, String &msg );
     bool                broadcastMessage( uint32_t fromId, meshPackageType type, String &msg, meshConnectionType *exclude = NULL );
-    
+
     bool                sendPackage( meshConnectionType *connection, String &package );
     String              buildMeshPackage(uint32_t destId, meshPackageType type, String &msg);
 
-    
+
     // in easyMeshSync.cpp
     //must be accessable from callback
     void                startNodeSync( meshConnectionType *conn );
@@ -135,7 +136,7 @@ protected:
     void                startTimeSync( meshConnectionType *conn );
     void                handleTimeSync( meshConnectionType *conn, JsonObject& root );
     bool                adoptionCalc( meshConnectionType *conn );
-    
+
     // in easyMeshConnection.cpp
     void                manageConnections( void );
     String              subConnectionJson( meshConnectionType *exclude );
@@ -159,7 +160,7 @@ protected:
     // in easyMeshAP.cpp
     void                apInit( void );
     void                tcpServerInit(espconn &serverConn, esp_tcp &serverTcp, espconn_connect_callback connectCb, uint32 port);
-    
+
     // callbacks
     // in easyMeshConnection.cpp
     static void         wifiEventCb(System_Event_t *event);
@@ -168,7 +169,7 @@ protected:
     static void         meshRecvCb(void *arg, char *data, unsigned short length);
     static void         meshDisconCb(void *arg);
     static void         meshReconCb(void *arg, sint8 err);
-    
+
 
     // variables
     uint32_t    _nodeId;
@@ -181,10 +182,10 @@ protected:
     uint8_t	_meshMaxConn;
 
     os_timer_t  _scanTimer;
-    
+
     espconn     _meshServerConn;
     esp_tcp     _meshServerTcp;
-    
+
     espconn     _stationConn;
     esp_tcp     _stationTcp;
 };
